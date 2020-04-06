@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:munit="http://www.mulesoft.org/schema/mule/munit" xmlns:munit-tools="http://www.mulesoft.org/schema/mule/munit-tools"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xsi:schemaLocation="
+		http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+		http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd
+		http://www.mulesoft.org/schema/mule/munit-tools  http://www.mulesoft.org/schema/mule/munit-tools/current/mule-munit-tools.xsd">
+	<munit:config name="test_new_connector-test-suite.xml" />
+	<munit:test name="test_new_connector-test-suite-test_new_connectorFlowTest1" doc:id="79527e95-fb48-489f-91fc-3d049e9beae0" description="Test">
+		<munit:execution >
+			<flow-ref doc:name="Flow-ref to test_new_connectorFlow" doc:id="7918e8ff-e73b-46fa-8029-cca54fdc3b6d" name="test_new_connectorFlow"/>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:assert-equals doc:name="Assert equals" doc:id="874f6274-6c05-460d-9c9a-86a04ec7ce22" actual="#[payload]" expected="#[{
+			name:'kazim'
+			}]"/>
+		</munit:validation>
+	</munit:test>
+
+</mule>
