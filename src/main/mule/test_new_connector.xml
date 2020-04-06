@@ -16,7 +16,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 output application/java
 ---
 {
-	name:'kazim'
+	name:'john'
 }]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
@@ -29,7 +29,7 @@ output application/java
 output application/java
 ---
 {
-	name:'khan'
+	name:'doe'
 }]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>

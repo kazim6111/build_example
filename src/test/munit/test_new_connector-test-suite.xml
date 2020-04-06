@@ -14,7 +14,17 @@
 		</munit:execution>
 		<munit:validation >
 			<munit-tools:assert-equals doc:name="Assert equals" doc:id="874f6274-6c05-460d-9c9a-86a04ec7ce22" actual="#[payload]" expected="#[{
-			name:'kazim'
+			name:'john'
+			}]"/>
+		</munit:validation>
+	</munit:test>
+	<munit:test name="test_new_connector-test-suite-test_new_connectorFlowTest2" doc:id="3e9c31c0-68d3-48ab-b2fb-1b48693943a0" description="Test">
+		<munit:execution >
+			<flow-ref doc:name="Flow-ref to test_new_connectorFlow" doc:id="14d4f6ed-4045-414d-b690-47a35c01a1a2" name="test_new_connectorFlow2"/>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:assert-equals doc:name="Assert equals" doc:id="3a3e3e2f-bd0b-419f-be09-128324c5eeb2" actual="#[payload]" expected="#[{
+			name:'doe'
 			}]"/>
 		</munit:validation>
 	</munit:test>
